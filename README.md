@@ -87,7 +87,7 @@ To reduce bias, undersampling is used so the model sees a balanced number of pop
 pip install pip install -r requirements.txt
 
 ```
-2. Run the code file `spotify_analysis.py` or use in Jupyter Notebook.
+2. Run the code file `spotify_code.py` or use in Jupyter Notebook.
 
 ---
 
