@@ -25,23 +25,32 @@ Downloaded from Kaggle. It contains thousands of songs with Spotify’s extracte
 
 ---
 
-## 🎼 Audio Feature Terms Explained
+## 🎵 Features Explained (from Spotify API)
 
-| Feature | Description |
-|--------|-------------|
-| **danceability** | Describes how suitable a track is for dancing (0.0–1.0). 💃 |
-| **energy** | A perceptual measure of intensity and activity (0.0–1.0). 🔋 |
-| **valence** | Musical positivity. High valence = happy, cheerful songs. 😊 |
-| **acousticness** | Confidence measure of whether a track is acoustic. 🎸 |
-| **instrumentalness** | Predicts the presence of vocals. Higher = more instrumental. 🎻 |
-| **liveness** | Presence of an audience. Higher values mean live performance. 🎤 |
-| **speechiness** | Amount of spoken words in a track. 🗣️ |
-| **loudness** | Overall loudness (in dB). 📢 |
-| **tempo** | Speed of the song in beats per minute (BPM). 🕒 |
-| **key** | The musical key (0–11) representing C to B. 🎶 |
-| **mode** | Major (1) or Minor (0) key. 🌕🌑 |
-| **time_signature** | Beats per measure (e.g., 4/4, 3/4). 🎵 |
-| **popularity** | Spotify's internal score (0–100). 🌟 |
+All columns in this dataset and full descriptions:
+
+| Feature              | Description |
+|----------------------|-------------|
+| `artist_name`        | Name of the artist. |
+| `track_id`           | Spotify's unique track ID. |
+| `track_name`         | Name of the song/track. |
+| `acousticness`       | Confidence from 0.0 to 1.0 whether the track is acoustic. 1.0 = very likely acoustic. |
+| `danceability`       | How suitable a track is for dancing (0.0 = not danceable, 1.0 = very danceable). |
+| `duration_ms`        | Duration of the track in milliseconds. |
+| `energy`             | Intensity and activity level of a track. Higher values mean more energetic. |
+| `instrumentalness`   | Likelihood a track has no vocals (closer to 1.0 = more instrumental). |
+| `key`                | Estimated key (0 = C, 1 = C♯/D♭, ..., 11 = B). -1 if unknown. |
+| `liveness`           | Detects audience presence. Values >0.8 imply live performance. |
+| `loudness`           | Overall loudness (in dB). Ranges typically between -60 and 0. |
+| `mode`               | Modality: 1 = major, 0 = minor. |
+| `speechiness`        | Detects spoken words. Closer to 1.0 = more speech-like. |
+| `tempo`              | Beats per minute (BPM). |
+| `time_signature`     | Number of beats per bar (e.g., 4 means 4/4 time). |
+| `valence`            | Musical positivity. 0.0 = sad, 1.0 = happy. |
+| `popularity`         | Spotify popularity score (0–100). Higher = more popular. |
+
+ℹ️ **Note:** Popularity is based on total plays and recency.
+
 
 ---
 
