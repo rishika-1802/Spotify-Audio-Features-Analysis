@@ -84,16 +84,16 @@ To reduce bias, undersampling is used so the model sees a balanced number of pop
 
 1. Make sure dependencies are installed:
 ```bash
-pip install pandas numpy matplotlib seaborn scikit-learn statsmodels
+pip install pip install -r requirements.txt
+
 ```
 2. Run the code file `spotify_analysis.py` or use in Jupyter Notebook.
 
 ---
 
-## 🙌 Author
-Created with ❤️ by **Élodie💕**
+
 
 ---
 
 ## 📬 Contact
-Have questions or want to collaborate? Reach out anytime! 🎶
+Have questions or want to collaborate? Reach out anytime!~rishika1826@gmail.com 🎶
